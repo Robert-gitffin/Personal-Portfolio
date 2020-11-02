@@ -1,0 +1,240 @@
+:root{
+  --main-darkblue: #000033;
+  --main-lightblue: #104a65;
+  --main-yellow: #f4ba32;
+  --main-white: #fffef2;
+  --main-red: #770a35;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  h1{
+  font-family: 'Fjalla One', sans-serif;
+  color: var(--main-white);
+  font-size: 60px;
+}
+
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  color: var(--main-white);
+  font-size: 30px;  
+}
+
+p{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  color: var(--main-white);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-github {
+  background: #00aff0;
+  color: white;
+}
+
+#navbar{
+  display: flex;
+  background-color: var(--main-yellow);
+  justify-content: flex-end;
+  width: 100%;
+  top:0;
+  left: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+#navbar ul{
+  list-style-type: none;
+  display: flex;
+}
+
+#navbar ul li{
+  display: flex;
+}
+
+#navbar ul li a{
+  color: var(--main-darkblue);
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: top;
+  font-weight: bold;
+  
+}
+
+#navbar ul li a:hover{
+  background-color: var(--main-white);
+}
+
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 58px;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80);
+  background-size: cover;
+}
+
+#projects{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000033;
+  background-image: linear-gradient(180deg, #000033 0%, #104a65 43%, #770a35 67%, #f4ba32 91%);
+  
+}
+
+.projects-tile-container{
+  display: grid;
+  margin: 7rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  column-gap: 3rem;
+  row-gap: 4rem;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 480px){
+.project-tile{
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--main-yellow);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow:0px 0px 7px 2px rgba(50, 50, 50, 1);
+  height: 200px;
+}
+} 
+
+.projects-tile-container img{
+  display: block;
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects-tile-container p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-darkblue);
+  font-size: 2rem;
+    
+}
+.project-tile{
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--main-yellow);
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow:0px 0px 7px 2px rgba(50, 50, 50, 1);
+  height: 500px;
+}
+
+.span{
+  color: var(--main-yellow);
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover span{
+ color: var(--main-red);
+}
+
+
+.projects-section-header{
+  display: flex;
+  box-sizing: border-box;
+  margin: 10px auto 10px auto;
+}
+
+
+#social{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-lightblue); 
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 80vh;
+  margin-bottom:0px;
+  
+}
+
+#social div{
+  list-display-type: none;
+  display: flex;
+  justify-content: space-around;
+  width:18%;
+}
+
+#social div a{
+  padding:15px;
+}
+
+#footer{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  background-color: var(--main-yellow);
+  
+}
+
+#footer ul{
+  list-style-type: none;
+  display: flex;
+
+}
+
+#footer ul li{
+   
+}
+
+#footer ul li a{
+  text-decoration: none;
+  color: var(--main-darkblue);
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-right: 15px;
+}
+section {
+
+}
+
+.projects-section-header {
+  margin: 5rem auto 5rem auto;
+}
