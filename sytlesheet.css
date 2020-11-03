@@ -28,38 +28,7 @@ p{
   color: var(--main-white);
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-.fa-github {
-  background: #00aff0;
-  color: white;
-}
+
 
 #navbar{
   display: flex;
@@ -116,10 +85,13 @@ p{
   background-image: linear-gradient(180deg, #000033 0%, #104a65 43%, #770a35 67%, #f4ba32 91%);
   
 }
+.projects-section-header {
+  padding: 4rem;
+}
 
 .projects-tile-container{
   display: grid;
-  margin: 7rem;
+  margin: 2rem 7rem;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   column-gap: 3rem;
   row-gap: 4rem;
@@ -182,7 +154,9 @@ p{
   box-sizing: border-box;
   margin: 10px auto 10px auto;
 }
-
+/*
+|| Social / Contact section styling below ||
+*/
 
 #social{
   display: flex;
@@ -191,21 +165,61 @@ p{
   justify-content: center;
   align-items: center;
   width:100%;
-  height: 80vh;
+  height: 40vh;
   margin-bottom:0px;
   
 }
+.social-header {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
 
-#social div{
-  list-display-type: none;
+.social-buttons{
   display: flex;
   justify-content: space-around;
-  width:18%;
+  width: 35rem;
+}
+.fa {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 2rem;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-github {
+  background: #00aff0;
+  color: white;
 }
 
 #social div a{
-  padding:15px;
+  padding:1rem;
 }
+/*
+|| Footer styling below ||
+*/
 
 #footer{
   display: flex;
@@ -231,10 +245,7 @@ p{
   font-family: 'Noto Sans JP', sans-serif;
   padding-right: 15px;
 }
-section {
 
-}
 
-.projects-section-header {
-  margin: 5rem auto 5rem auto;
-}
+
+
